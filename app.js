@@ -3,7 +3,7 @@ const client = new TwitterApi({ clientId: "UnRhZnFMUUNicEd1ZDUyTHN5YXo6MTpjaQ" }
 const axios = require('axios').default;
 module.exports = function(app){
     app.get("/", (req,res) => {
-        //res.render("index");
+        res.send("index");
     });
     app.get("/tweet", (req,res) => {
         const options = {
